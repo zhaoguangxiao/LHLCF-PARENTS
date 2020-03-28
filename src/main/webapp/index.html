@@ -17,15 +17,6 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/video.css" />
-    <script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?24d33364ca1716c4dcc849dc02338f4a";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
 </head>
 <body>
 <div class="menu">
@@ -306,59 +297,29 @@
         </div>
     </div>
     
-    <div class="nws">
-    	<div class="mdzs-bt">
+    <div class="nws" id="app">
+    	<div class="mdzs-bt" >
         <span>新闻资讯<b>News</b></span>
         <a href="/news.html">了解更多</a>
         </div>
-        <div class="new-xwdt-nr">  
-            <dl>
-            
-            <a href="/news/508.html">
+        <div class="new-xwdt-nr" v-for="(each,index) in list" :key="each.uidpk">  
+            <!-- <dl>
+            <a :href="'newsinfo.html?uidpk='+each.uidpk+''">
                 <dt>
-                    <img src="picture/5e5e252501562.jpg">
+                    <img v-if="index==0" src="picture/5e5e252501562.jpg">
                 </dt>
                 <dd>
-                    <h6>炒饭加盟店开店前需要的准备</h6>
-                    <p>小编和大家一起来分享一些炒饭加盟店开店前需要准备的事情，做好这些开店前的准备，这样炒饭加盟店更容易成功哦。</p>
+                    <h6>{{each.title}}</h6>
+                    <p>{{each.introduce}}</p>
                     <font></font>
                 </dd>
             </a>
             
-            </dl>
+            </dl> -->
 
-            <ul>
-            	<li>
-                <a href="/news/337.html">
-                    <p>热烈恭贺厉害了炒饭七店齐开！祝开业大吉，生意兴隆！</p>
-                    <font>2019-04-29</font>
-                </a>
-                </li><li>
-                <a href="/news/308.html">
-                    <p>热烈恭贺厉害了炒饭九店齐开！祝开业大吉，生意兴隆！</p>
-                    <font>2019-03-20</font>
-                </a>
-                </li><li>
-                <a href="/news/288.html">
-                    <p>炒饭加盟品牌都是怎么发展起来的？</p>
-                    <font>2019-02-21</font>
-                </a>
-                </li><li>
-                <a href="/news/287.html">
-                    <p>热烈恭喜厉害了炒饭六店齐开！祝开业大吉，生意六六六！</p>
-                    <font>2019-02-21</font>
-                </a>
-                </li><li>
-                <a href="/news/286.html">
-                    <p>外卖加盟店如何做好开业准备？</p>
-                    <font>2019-02-20</font>
-                </a>
-                </li><li>
-                <a href="/news/14.html">
-                    <p>厉害了炒饭加盟条件有哪些？</p>
-                    <font>2018-01-08</font>
-                </a>
-                </li>            </ul>
+            <ul id="news_list">
+              
+            </ul>
 
          </div>
         
@@ -484,7 +445,7 @@
 	<dl>
 		<dt>
 			<video controls id="player" loop>
-				<source src="/Public/Home/images/mp4_video.mp4" type="video/mp4">
+				<source src="/images/mp4_video.mp4" type="video/mp4">
 			</video>
 		</dt>
 		<dd onClick="videogb();"></dd>
@@ -646,6 +607,7 @@ function marqueeStart(i, direction){
 </script>
 <script type="text/javascript">marqueeStart(2, "up");</script>
 <script type="text/javascript" src="/js/pingzi_video.js"></script>
+<script src="./js/index.js"></script>
 <script>
     var swiper = new Swiper('.ys-nr .swiper-container', {
         spaceBetween: 0,

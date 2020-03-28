@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="baidu-site-verification" content="sOP3MdQ9lh" />
+    <title>404</title>
+    <meta name="keywords" content="炒饭加盟,炒饭店加盟,厉害了炒饭,厉害了炒饭官网">
+    <meta name="description" content="厉害了炒饭加盟品牌隶属于杭州味捷餐饮集团旗下特色炒饭店加盟品牌，公司利用近十年餐饮加盟经验为广大的餐饮创业者提供炒饭加盟,炒饭店加盟,炒饭连锁店加盟等相关服务,欢迎广大炒饭加盟创业者加盟厉害了炒饭。">
+    <meta name="author" content="味捷集团" />
+    <link href="/Public/Home/images/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="/Public/Home/css/404.css" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="sls">
+	<img class="png" src="/Public/Home/images/404.png" />
+	<img class="png msg" src="/Public/Home/images/404_msg.png" />
+	<p><a href="/"><img class="png" src="/Public/Home/images/404_to_index.png" /></a> </p>
+    
+</div>
+<div class="fow"></div> 
+
+<div class="w1"></div>
+</body>
+</html>
